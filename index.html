@@ -167,12 +167,13 @@
   /* news */
   .news-list{list-style:none;padding:0;margin:0;}
   .news-list li{
-    display:flex;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);font-size:16px;
+    display:flex;flex-wrap:wrap;align-items:center;row-gap:8px;
+    gap:20px;padding:18px 0;border-bottom:1px solid var(--line);font-size:16px;
   }
-  .news-list time{color:var(--ink-soft);font-size:14.5px;min-width:90px;}
+  .news-list time{color:var(--ink-soft);font-size:14.5px;min-width:90px;flex-shrink:0;}
   .news-tag{
     font-size:13px;background:var(--moss-deep);color:#fff;padding:3px 12px;border-radius:100px;
-    align-self:flex-start;font-weight:700;
+    align-self:flex-start;font-weight:700;white-space:nowrap;flex-shrink:0;
   }
   .news-list li:nth-child(2n) .news-tag{background:var(--pop);}
   /* voice */
