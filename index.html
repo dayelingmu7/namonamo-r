@@ -191,6 +191,49 @@
     text-decoration:none;color:var(--ink);background:#FFFFFF;
   }
   footer{background:var(--indigo-deep);color:#BFDCC7;padding:36px 0;font-size:14.5px;text-align:center;}
+  /* ===== レスポンシブ対応（タブレット・スマホ） ===== */
+  @media (max-width: 780px){
+    .wrap{padding:0 20px;}
+    nav .wrap{height:60px;}
+    nav ul{display:none;}
+    .navcta{padding:8px 16px;font-size:13px;}
+    .logo{font-size:18px;}
+
+    .hero{padding:52px 0 48px;}
+    .hero h1{font-size:32px;line-height:1.5;}
+    .hero p{font-size:15px;}
+    .hero-photo{height:190px;margin-top:32px;}
+    .btnrow{flex-direction:column;align-items:stretch;}
+    .btn-primary, .btn-outline{text-align:center;}
+
+    section{padding:48px 0;}
+    .sec-head h2{font-size:24px;}
+    .sec-head p{font-size:14px;}
+
+    .concept-grid{grid-template-columns:1fr;gap:18px;}
+    .concept-card:nth-child(2), .concept-card:nth-child(3){transform:none;}
+
+    .kaitori-flex{grid-template-columns:1fr;gap:28px;}
+
+    .formrow.two{grid-template-columns:1fr;}
+    .formcard{padding:24px !important;}
+
+    .hanbai-grid{grid-template-columns:repeat(2,1fr);gap:14px;}
+
+    .store-flex{grid-template-columns:1fr;gap:24px;}
+
+    .voice-grid{grid-template-columns:1fr;gap:16px;}
+    .voice-card:nth-child(1), .voice-card:nth-child(3){transform:none;}
+
+    .contact-sns{grid-template-columns:1fr;gap:32px;}
+
+    .hero h1 em{background-size:auto;}
+  }
+
+  @media (max-width: 420px){
+    .hero h1{font-size:27px;}
+    .hanbai-grid{grid-template-columns:1fr;}
+  }
 </style>
 </head>
 <body>
